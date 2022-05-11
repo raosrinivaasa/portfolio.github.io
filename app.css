@@ -43,7 +43,6 @@ nav{
 }
 /*Section 1*/
 .sec1{
-   
     padding-top: 4em;
     width:100vw;
     height: 96vh;
@@ -57,12 +56,8 @@ nav{
     font-size: 88px;
 }
 /*Section 2 */
-.cardsWrapper{
-display: grid;
-grid-template-columns: repeat(3,1fr);
-}
 .card{
-    width:336px;
+    width:320px;
     height:336px;
     border-radius: 8px;  
 }
@@ -118,5 +113,11 @@ svg:hover{
 @media (max-width:560px) {
     .heading{
     font-size: 48px ;
+    }
+    .headFont{
+        font-size: 24pt;
+    }
+    .xtra{
+    font-size: 24pt;
     }
 }
