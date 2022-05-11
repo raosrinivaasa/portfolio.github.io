@@ -43,9 +43,8 @@ nav{
 }
 /*Section 1*/
 .sec1{
-    padding-top: 4em;
     width:100vw;
-    height: 96vh;
+    height: 100vh;
     color:var(--dark); 
 }
 .heading{
