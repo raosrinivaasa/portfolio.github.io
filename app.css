@@ -1,12 +1,13 @@
 :root{
     --blue:rgb(102, 206, 233);
     --yellow:rgb(233, 220, 102);
-    --navBg:rgba(127, 255, 212, 0.2);
+    --blue2:rgba(127, 255, 212, 0.2);
+    --blue8:rgba(127, 255, 212, 0.8);
     --dark:rgb(64, 64, 64);
 }
 *::selection{
-background-color: #000;
-color: #fff;
+background-color: var(--blue2);
+/* color: #fff; */
 }
 .headFont{
     font-size: 24pt;
@@ -14,13 +15,15 @@ color: #fff;
 .subHeadFont1{
     font-size: 16pt;
 }
+h1,h2,p{
+    margin:0;
+}
 html,body{
     height:100vh;
     width:100vw;
     /* background-color: #1a1a1a; */
     font-family: 'Koulen';
     letter-spacing: 1;
-    /* background: url("https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif"); */
 }
 #preloader{
     display: flex;
@@ -31,12 +34,16 @@ html,body{
 }
 /*Navbar styles*/
 nav{
-    position: fixed !important;
+    position: sticky !important;
+    top:0;
     width:100vw;
     z-index: 2;
-    /* height:4em; */
-    background-color:var(--navBg);
+    background-color:var(--blue2);
     justify-content: space-between !important;
+ 
+}
+.navItem{
+    transition: top 0.3s;
 }
 .navItem:hover{
     color:var(--blue);
@@ -61,43 +68,41 @@ nav{
     border-radius: 8px;  
 }
 .btn{
-    border-radius: 4px;
+    width: 128px;
+    border-radius: 2px;
     background-color: aqua;
 }
 .btn:hover{
+    transition: all 0.2s;
     background-color: var(--dark);
     color:aqua;
 }
 .cardFront{
     transform-style: preserve-3d;
     transform: translateZ(20px);    
-    background-color: var(--yellow);
+    background-color: var(--blue2);
 }
 .cardFront:hover{
-    background-color: var(--blue);
-    transition: all .2s;
+    background-color: #57bdd2;
+    transition: all .1s;
     color: #fff;
 }
-.cardFront::before{
-    content:'CLICK FOR MORE';
-    position: absolute;
-    bottom:56px;
-    font-size: 16px;
-    color:azure;
-    opacity: 0;
-}
-.cardFront:hover::before{
-    bottom:16px;
-    opacity: 0.8; 
+
+.cardFront:hover{
+   cursor:pointer;
 }
 .logos svg:hover{
     fill:rgb(80, 80, 80);
 }
 /*Section 3*/
-section{
-}
+
 .cardFull{
+    width:72vw;
     background-color: rgba(181, 157, 217, 0.2);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);   
+}
+.pWrapper{
+
 }
 .project{
     border-bottom: 1px dashed black;
@@ -115,6 +120,9 @@ svg:hover{
     }
     .headFont{
         font-size: 24pt;
+    }
+    .cardFull{
+        width:88vw;
     }
     .xtra{
     font-size: 24pt;
