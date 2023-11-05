@@ -18,7 +18,65 @@ html,body{
     justify-content:center;
     align-items:center;
     flex-wrap: wrap;
-    text-align: center;
+    /* text-align: center; */
+}
+.rf{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/* Justify */
+.jusL{
+    justify-content: left;
+}
+
+/* Alignment */
+.alignL{
+    text-align: left;
+    align-items: left !important;
+}
+
+/* Margin and Padding */
+
+.mT4{
+    margin-top: 4px;
+}
+
+/* 8px */
+.mT8{
+    margin-top: 8px;
+}
+.mB8{
+    margin-bottom: 8px;
+}
+.mR8{
+    margin-right: 8px;
+}
+.mL8{
+    margin-left: 8px;
+}
+
+/* 16px */
+.mT16{
+    margin-top: 16px;
+}
+.mB16{
+    margin-bottom: 16px;
+}
+.mL16{
+    margin-left: 16px;
+}
+.mR16{
+    margin-right: 16px;
+}
+
+.mTL8{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.mTL16{
+    margin-top: 16px;
+    margin-left: 16px;
 }
 .mp8{
     margin:8px;
@@ -26,8 +84,21 @@ html,body{
 }
 .mp16{
     margin:16px;
+    padding:16px;   
+}
+.m16{
+    margin:16px;   
+}
+.p16{
     padding:16px;  
 }
+.m8{
+    margin:8px;
+}
+.p8{
+    padding:8px;
+}
+
 a{
     text-decoration: none !important;
     color:var(--secondary)
@@ -36,11 +107,16 @@ a:hover{
     cursor: pointer;
 }
 .btn{
-width: fit-content;
+    width: fit-content;
 }
 .logoSize{
     width:40px;
     height:40px;
+    padding:8px;
+}
+.logoSm{
+    width:32px;
+    height:32px;
     padding:8px;
 }
 .imgSize{
@@ -50,4 +126,8 @@ width: fit-content;
 /*Font styles*/
 .f1{
     font-size:88px;
+}
+
+.txt-L{
+    text-align: left;
 }
